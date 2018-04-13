@@ -22,15 +22,14 @@ var movies = [
         title: "Piraci z Karaibów",
         desc: "Przygody Jacka Sparrowa",
         img: 'images/piraci.jpg'
-    }
-        
+    } 
 ];
 
 var moviesElements = movies.map(function(movie) {
    return React.createElement('li', {key: movie.id},
         React.createElement('h2', {}, movie.title),
         React.createElement('p', {}, movie.desc),
-        React.createElement('img', {src:movie.img, height: 300})
+        React.createElement('img', {src: movie.img, height: 300})
         ); 
 });
 
